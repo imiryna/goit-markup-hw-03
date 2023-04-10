@@ -69,28 +69,38 @@
 
     <main>
       <section class="description">
-        <div class="container">
-          <h1 class="main-title" hidden>Portfolio</h1>
+        <div class="portfolio-container container">
+          <h1 class="main-title visually-hidden" hidden>Portfolio</h1>
+
           <!--  top line  -->
-          <ul class="list">
-            <li>
-              <button type="button" class="btn-iris pointer">All</button>
-            </li>
-            <li>
-              <button type="button" class="btn-iris pointer">Web Site</button>
-            </li>
-            <li class="div-btn-list-item">
-              <button type="button" class="btn-iris pointer">App</button>
-            </li>
-            <li>
-              <button type="button" class="btn-iris pointer">Design</button>
-            </li>
-            <li>
-              <button type="button" class="btn-iris pointer">Marketing</button>
-            </li>
-          </ul>
+
+          <div class="btn-container">
+            <ul class="btn-list list">
+              <li>
+                <button type="button" class="btn-iris btn-all">All</button>
+              </li>
+              <li>
+                <button type="button" class="btn-iris btn-web">Web Site</button>
+              </li>
+              <li class="div-btn-list-item">
+                <button type="button" class="btn-iris btn-app">App</button>
+              </li>
+              <li>
+                <button type="button" class="btn-iris btn-design">
+                  Design
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn-iris btn-market">
+                  Marketing
+                </button>
+              </li>
+            </ul>
+          </div>
+
           <!--  content  -->
-          <ul class="list row-lisc">
+
+          <ul class="list row-list">
             <!-- row 1  -->
             <li class="row-list-item">
               <a class="link" href="">
@@ -100,8 +110,8 @@
                   alt="Banking app"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Banking App Interface Concept</h2>
-                <p class="desc">App</p>
+                <h2 class="row-title">Banking App Interface Concept</h2>
+                <p class="row-text desc">App</p>
               </a>
             </li>
             <li>
@@ -112,8 +122,8 @@
                   alt="Cashless Payment"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Cashless Payment</h2>
-                <p class="desc">Marketing</p>
+                <h2 class="row-title">Cashless Payment</h2>
+                <p class="row-text desc">Marketing</p>
               </a>
             </li>
             <li>
@@ -124,8 +134,8 @@
                   alt="Desctop"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Meditation App</h2>
-                <p class="desc">App</p>
+                <h2 class="row-title">Meditation App</h2>
+                <p class="row-text desc">App</p>
               </a>
             </li>
             <!--  row 2  -->
@@ -137,8 +147,8 @@
                   alt="Taxi"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Taxi Service</h2>
-                <p class="desc">Marketing</p>
+                <h2 class="row-title">Taxi Service</h2>
+                <p class="row-text desc">Marketing</p>
               </a>
             </li>
             <li>
@@ -149,8 +159,8 @@
                   alt="Screen Illustration"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Screen Illustrations</h2>
-                <p class="desc">Design</p>
+                <h2 class="row-title">Screen Illustrations</h2>
+                <p class="row-text desc">Design</p>
               </a>
             </li>
             <li>
@@ -161,8 +171,8 @@
                   alt="A girl outsite"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Online Courses</h2>
-                <p class="desc">Marketing</p>
+                <h2 class="row-title">Online Courses</h2>
+                <p class="row-text desc">Marketing</p>
               </a>
             </li>
             <!--  row 3  -->
@@ -174,8 +184,8 @@
                   alt="Instagram Stories"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Instagram Stories Concept</h2>
-                <p class="desc">Design</p>
+                <h2 class="row-title">Instagram Stories Concept</h2>
+                <p class="row-text desc">Design</p>
               </a>
             </li>
             <li>
@@ -186,8 +196,8 @@
                   alt="Organic Food"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Organic Food</h2>
-                <p class="desc">Web Site</p>
+                <h2 class="row-title">Organic Food</h2>
+                <p class="row-text desc">Web Site</p>
               </a>
             </li>
             <li>
@@ -198,8 +208,8 @@
                   alt="Coffee"
                   width="360"
                   height="300" />
-                <h2 class="title-name">Fresh Coffee</h2>
-                <p class="desc">Web Site</p>
+                <h2 class="row-title">Fresh Coffee</h2>
+                <p class="row-text desc">Web Site</p>
               </a>
             </li>
           </ul>
@@ -210,7 +220,7 @@
     <!--  footer  -->
 
     <footer class="page-footer" id="contact">
-      <div class="container">
+      <div class="footer-container container">
         <a class="link footer-link" href="./index.html">
           Web <span class="text">Studio</span>
         </a>
