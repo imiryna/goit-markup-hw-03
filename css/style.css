@@ -161,10 +161,13 @@ body {
 
 /* HERO SECTION */
 
-.hero-container {
-  display: block;
+.hero {
   padding-top: 188px;
   padding-bottom: 292px;
+}
+
+.hero-container {
+  display: block;
 }
 
 .hero-title {
@@ -243,6 +246,11 @@ body {
 
 /* SECONDER SECTION strategy */
 
+.strategy {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .list-container {
   display: flex;
   width: 1128px;
@@ -253,8 +261,6 @@ body {
 .list-content {
   display: flex;
   align-items: flex-start;
-  padding-top: 120px;
-  padding-bottom: 120px;
   gap: 24px;
 }
 
@@ -293,6 +299,11 @@ body {
   width: 1128px;
 }
 
+.subjekt,
+.team-content {
+  padding-bottom: 120px;
+}
+
 .part-list,
 .team-list {
   display: flex;
@@ -300,7 +311,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .title-desc {
