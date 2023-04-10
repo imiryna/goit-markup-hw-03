@@ -58,7 +58,7 @@ img {
 /* resrt end */
 
 .container {
-  width: 1158 px;
+  width: 1158px;
   margin-right: auto;
   margin-left: auto;
 
@@ -81,6 +81,10 @@ body {
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.page-header {
+  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .navigation {
@@ -112,6 +116,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-navy-blue);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-list {
@@ -163,17 +169,12 @@ body {
 
 .hero {
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
+  background-color: var(--color-navy-blue);
 }
 
 .hero-container {
   display: block;
-}
-
-.hero-title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
 }
 
 .text {
@@ -186,10 +187,6 @@ body {
   color: var(--color-cloud);
 }
 
-.hero {
-  background-color: var(--color-navy-blue);
-}
-
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -199,11 +196,15 @@ body {
   letter-spacing: 0.02em;
   width: 496px;
   height: 120px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 .btn {
   display: block;
-  max-width: 169px;
+  min-width: 169px;
   min-height: 56px;
   padding: 16px, 32px;
   margin-left: auto;
@@ -221,25 +222,11 @@ body {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.btn-iris {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-iris);
-  background-color: var(--color-cloud);
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  border: 1px solid var(--color-cornflower);
-  border-radius: 4px;
+  border: none;
 }
 
 .btn-dark:hover,
-.btn-iris:hover,
-.btn-dark:focus,
-.btn-iris:focus {
+.btn-dark:focus {
   color: var(--color-white);
   background-color: var(--color-ocean);
 }
@@ -266,6 +253,7 @@ body {
 
 .list-content-item {
   margin-right: 24px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .title {
@@ -346,7 +334,10 @@ body {
 
 .team-content {
   background-color: var(--color-cloud);
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
 }
+
 .team-list-item {
   background-color: var(--color-white);
   display: flex;
@@ -357,17 +348,31 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .team-img {
   margin-bottom: 32px;
 }
 
+.title-name {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  ont-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  text-align: center;
+}
 /* footer */
 
 .page-footer {
   background-color: var(--color-navy-blue);
-  padding-top: 100px;
+  padding: 100px, 0;
 }
 
 .footer-link {
@@ -378,6 +383,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
+  display: inline-block;
   margin-left: 15px;
   margin-bottom: 16px;
   padding-top: 100px;
@@ -398,13 +404,36 @@ body {
 
 /* PORTFOLIO BUTTON */
 
+.description {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.btn-iris {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-iris);
+  background-color: var(--color-cloud);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
+}
+
+.btn-iris:hover,
+.btn-iris:focus {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+  border: 1px solid transparent;
+}
 .btn-list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 
@@ -441,6 +470,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+  row-gap: 48px;
   padding-bottom: 120px;
 }
 
@@ -448,9 +478,13 @@ body {
   flex-basis: calc((100%-48px) / 3);
 }
 
-.row-img,
-.row-text {
+.row-img {
   margin-bottom: 32px;
+}
+
+.im .row-container {
+  margin-bottom: 32px, 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .row-titel {
