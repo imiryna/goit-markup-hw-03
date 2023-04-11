@@ -253,7 +253,7 @@ body {
 
 .list-content-item {
   margin-right: 24px;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .title {
@@ -450,6 +450,7 @@ body {
 
 .row-list {
   display: flex;
+  width: 1128px;
   flex-wrap: wrap;
   gap: var(--indent);
   row-gap: 48px;
