@@ -235,9 +235,9 @@ body {
   padding-bottom: 120px;
 }
 
-.list-container {
+/*.list-container {
   width: 1128px;
-}
+}*/
 
 .list-content {
   display: flex;
@@ -369,7 +369,6 @@ body {
   color: var(--color-iris);
   display: inline-block;
   margin-bottom: 16px;
-  padding-top: 100px;
 }
 
 .desc-dark {
@@ -381,7 +380,6 @@ body {
   letter-spacing: 0.02em;
   width: 264px;
   margin-right: 1020px;
-  padding-bottom: 100px;
 }
 
 /* PORTFOLIO BUTTON */
